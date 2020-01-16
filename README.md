@@ -1,1 +1,1 @@
-# Next-Space
+A static co-working space website
