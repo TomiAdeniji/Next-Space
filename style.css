@@ -5,40 +5,48 @@
     padding: 0;
 }
 body,html{
-  width:100%;
+  font-family: 'Poppins', sans-serif;
 }
 .nextspace-container{
-  margin: 0rem 2rem;
-  padding: 0rem 4rem;
+  padding: 0 10%;
 }
 /*----header----*/
 header{
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-flex;
   display: flex;
-  justify-content: flex-end;
-  padding: 9px 3%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
   box-shadow: 0 1px 0 0 rgba(0,0,0,.2);
   margin-bottom: 20px;
 }
-
+.nav__links{
+  display: flex;
+  list-style: none;
+  
+}
+header nav li{
+  margin: 0 10px;
+}
+.nav__links li:first-child{
+  margin-left: 0;
+}
+.nav__links li:last-child{
+  margin-right: 0;
+}
 .header-logo{
   cursor: pointer;
-  margin-right: auto;
   width: 55px;
+
 }
 
 li a button{
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #222;
   text-decoration: none;
-}
-
-.nav__links{
-  list-style: none;
-}
-.nav__links li{
-  display: inline-block;
-  padding: 0px 20px;
 }
 
 .nav__links li a {
@@ -50,13 +58,13 @@ li a button{
   color: #1ab4b0;
 }
 .signup{
-  padding: 9px 25px;
+  padding: 5px 10px;
     background-color: rgba(245,253,253,1.5);
     border: 2px solid black;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 .signup:hover{
@@ -69,31 +77,33 @@ li a button{
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.coworkspace div{
-  padding: 10px;
+.coworkspace-content{
+  width: 40%;
 }
 .coworkspace-content__title{
   font-size: 20px;
- width: 380px;
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
 }
 .coworkspace-content__p{
   font-size: 13px;
-  width: 380px;
   margin-bottom: 15px;
-  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.coworkspace-content__image {
+  width: 50%;
 }
 
 .coworkspace-content__image img{
-  width: 20rem;
- height: 25rem; 
+  width: 100%;
 }
 
 #coworkspace-form{
-  box-shadow: 1px -1px 1px 1px rgba(0,0,0,.2);
+  box-shadow: 0px 2px 10px rgba(0,0,0,.2);
   border-radius: 15px;
-  width: 270px;
+  width: 60%;
+  padding: 20px;
 }
 .location-input{
   position: relative;
@@ -173,7 +183,7 @@ li a button{
 }
 /*----spaces----*/
 .spaces-title {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
   font-size: 20px;
 }
@@ -183,28 +193,28 @@ li a button{
   
 } 
 .spaces-content img{
-  width: 20rem;
-  height: 14rem;
+  width: 100%;
+
 }
 .space-card__content{
  padding: 5px 10px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
 }
 
 .spaces-content{
   box-shadow: 1px -1px 2px 1px rgba(0,0,0,.2);
   border-radius: 5px;
-  width: 20rem;
+  width: 30%;
   margin: 10px 0px;
 }
 
 /*---what-we-offer---*/
 .what-we-offer{
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin:20px 0 40px;
 }
 .what-we-offer__container{
   display: flex;
@@ -214,8 +224,8 @@ li a button{
 
 .what-we-offer__content{
   position: relative;
-  width: 22.6rem;
-  box-shadow: 1px -1px 2px 1px rgba(0,0,0,.2);
+  width: 30%;
+  box-shadow: 0px 2px 10px rgba(0,0,0,.2);
   border-radius: 5px;
 }
 .what-we-offer__content i{
@@ -225,7 +235,7 @@ li a button{
   padding: 0px 5px
 }
 .what-we-offer__title, .what-we-offer__p{
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding:5px 70px 10px;
   font-size: 13px;
   }
@@ -236,29 +246,29 @@ li a button{
   display: flex;
   justify-content: space-between;
   box-shadow: 0px -1px 0px 0px rgba(0,0,0,.3);
-  margin: 1.3rem 2rem;
-  padding: 1rem 4rem;
+  width: 100%;
 }
 
-.other-links div{
- width:100%;
+.other-links__box{
+ margin-top: 30px;
+ padding: 0 10%;
 }
 .other-links__list li{
   list-style-type: none;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
 }
 
 .currency{
-  padding-left: 45px;
+  padding: 8px 35px;
   border: 1px #dcddda solid;
   border-radius: 5px;
-  width: 18rem;
-  height: 2rem;
+  width: 77%;
+  margin-right: 30px;
 }
 .currency-logo{
   position: absolute;
-  margin-left: 1rem;
+  margin-left: 16px;
   margin-top: 8px;
 }
 .currency-logo img{
@@ -271,29 +281,23 @@ li a button{
   justify-content: space-between;
 }
 .footer-container div{
-  font-family: Poppins, sans-serif;
+  padding: 0 10%;
+  margin-top: 10px;
   font-size: 12px;
-  margin: 1.3rem 2rem;
-  padding: 0rem 4rem;
 }
 
 .social-media-icon-list li{
   list-style-type: none;
   display: inline-block;
-  padding:0px 10px;
 }
 
 /*----building-container__image-----*/
 
-
 .building-container__image{
-  display: flex;
-  justify-content: center;
-  
+  width: 100%;
 }
 .building-container__image img{
-  width: 70rem;
-  height: 27rem;
+  width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -302,76 +306,67 @@ li a button{
   display: flex;
   justify-content: space-between;
 }
+.building-container__content{
+  width: 100%;
+}
 .building-container__title{
-  font-family: Montserrat, sans-serif;
   padding: 0px 0px;
 }
 .building-container__cont{
-  font-family: Montserrat, sans-serif;
-  font-size: 13px;
-  width: 600px;
-
-  margin-bottom: 20px;
+width: 79%;
+font-size: 13px;
+margin-bottom: 20px;
 }
 
 .checkgrp2{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .checkgrp2__title{
   font-size: 16px;
   
 }
 .checkgrp-content{
-  font-family:Montserrat, sans-serif;
   font-size: 13px; 
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow:0px 2px 10px rgba(0,0,0,.3);
   border-radius: 5px;
-  width: 120px;
-  padding: 20px; 
+  width: 25%;
+  padding: 10px;
 }
 .checkgrp-content2{
-  font-family:Montserrat, sans-serif;
-  font-size: 13px; 
-  margin-right: 270px;
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
-  border-radius: 5px;
-  width: 160px;
-  padding: 20px;
+  margin-right: 330px;
+}
+.building-container__map{
+width: 70%;
 }
 .building-container__map img{
-width: 300px;
-height: 300px;
-}
+  width: 70%;
+  /* padding-left: 130px; */
+
+  }
 /*---image group---*/
 .opening-hours{
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .opening-hours__image1{
-  width: 210px;
+  width: 17%;
   height: 150px;
   border: none;
   border-radius: 5px;
 }
 .opening-hours__image2{
-  margin-right: 540px;
-  width: 210px;
-  height: 150px;
-  border-radius: 5px;
+  margin-right: 440px;
 }
 .opening-hours_card{
-  
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow:0px 2px 10px rgba(0,0,0,.3);
   border-radius: 5px;
   padding: 10px 20px;
-  width: 240px;
-}
-
-.opening-hours__title{
-  font-family: Montserrat, sans-serif;
+  width: 20%;
 }
 
 /*---staff info---*/
@@ -379,17 +374,18 @@ height: 300px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .staff-info img{
-  width: 430px;
+  width: 40%;
   border-radius: 8px;
 }
 .staff-info__card{
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow:0px 2px 10px rgba(0,0,0,.3);
   border-radius: 5px;
-  padding: 10px 20px;
-  width: 240px;
+  padding: 10px 30px;
+  width: 20%;
 }
 .staff-info__btns{
   list-style: none;
@@ -400,7 +396,6 @@ height: 300px;
 }
 
 .staff-info__btns li button{
-  font-family: Montserrat, sans-serif;
   text-decoration: none;
   color: black;
   padding: 6px;
@@ -409,66 +404,100 @@ height: 300px;
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: Montserrat, sans-serif;
+  
   font-size: 10px;
 }
 .staff-info__btns li button:hover{
   background-color: rgba(118,96,222,1);
 }
 .staff-info__duration{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .staff-info__duration-input{
   border: 1px #dcddda solid;
   border-radius: 5px;
-  width: 180px;
-  padding: 5px 30px;
+  width: 100%;
+  padding: 7px;
   margin-bottom: 18px;
 }
 .reserve__btn{
   color: white;
   padding: 5px;
   border: none;
-  width:240px;
+  width:100%;
   text-align: center;
   background-color: rgba(118,96,222,1);
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  font-family: Poppins, sans-serif;
   font-size: 16px;
 }
 .reserve__btn:hover{
   background-color: rgba(118,96,222,.5);
 }
 
-
-@media screen and (max-width:320px){
+ @media only screen and (max-width: 320px){
+  header{
+  width: 50vh;
+  padding: 0 20%;
+  }
+  .coworkspace-content{
+    width: 50vh;
+    margin-bottom: 15px;
+    background-color: gold;
+  }
+ }
+@media only screen and (max-width:768px){
   
+  header{
+    flex-direction: column;
+    padding: 0 10%;
+  }
+  .header-logo{
+    width: 70px;
+    margin-bottom: 15px;
+  }
+  .nav__links{
+margin-bottom: 10px;
+  }
+  .nav__links li{
+    font-size:15px;
+    margin: 0 9px;
+  }
+  .signup{
+    padding: 1px 0;
+    width: 80px;
+    border-radius: 13px;
+    font-size: 15px;
+    
+  }
   .coworkspace{
-    display: flex;
     flex-direction:column;
+    
+  }
+  .coworkspace-content__image{
+    width: 100%;
+    margin: 0 20px;
+  }
+  .coworkspace-content{
+    width: 100%;
+    margin: 0 20px 30px;
   }
   .coworkspace-content__title{
-    font-size: 10px;
+    font-size: 16px;
     margin-bottom: 15px;
   }
   .coworkspace-content__p{
-    width:10%;
     margin-bottom: 15px;
-    font-family: Montserrat, sans-serif;
   }
   
   .spaces-card{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
   } 
-  .spaces-content img{
-    width: 50px;
-  }
+
   .spaces-content{
-    margin: 10px 0px;
+    width: 76%;
+    margin: 20px 20px;
   } 
   
   .what-we-offer__container{
@@ -477,23 +506,98 @@ height: 300px;
   }
   
   .what-we-offer__content{
-    margin: 10px 0px;
+    margin: 10px 20px;
+    width: 80%;
   }
+  
   .other-links{
-    display: flex;
+
     flex-direction: column;
   }
   .other-links__box{
     margin: 10px 0px;
   }
   .currency{
-    border: 1px #dcddda solid;
-    border-radius: 5px;
-    width: 200px;
-    padding-left: 45px;
+    width: 70%;
+  
   }
   .footer-container{
     display: flex;
     flex-direction: column;
   }
+
+  .building-container__image img{
+    width: 100%;
+  }
+  .building-container__map img{
+    padding-right:  200px;
+  }
+  .building-container{
+    flex-direction: column;
+  }
+  .checkgrp2{
+    flex-direction: column;
+  }
+  .checkgrp-content2{
+    margin-top: 20px;
+  }
+  .opening-hours{
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .opening-hours__image1{
+    width: 50%;
+    
+  }
+  .opening-hours__image2{
+    margin: 20px 0;
+  }
+  .opening-hours_card{
+    width: 50%;
+  }
+  .staff-info{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .staff-info img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .staff-info__card{
+    width: 60%;
+  }
+  .staff-info__duration-input{
+    width: 100%;
+  }
+  .reserve__btn{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:1100px){
+  .coworkspace-content__image{
+    width: 100%;
+  }
+  .coworkspace-content{
+    width: 100%;
+  }
+
+  .spaces-content{
+    width: 30%;}
+
+    .what-we-offer__content{
+      width: 30%;
+    }
+    
+    .checkgrp-content{
+      width: 100%;
+    }
+    .checkgrp-content2{
+      margin-left: 20px;
+    }
+    
+    
 }
